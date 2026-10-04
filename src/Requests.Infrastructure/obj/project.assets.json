@@ -1,0 +1,112 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Requests.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Requests.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Requests.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Requests.Application.dll": {}
+        }
+      },
+      "Requests.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Requests.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Requests.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Requests.Application/1.0.0": {
+      "type": "project",
+      "path": "../Requests.Application/Requests.Application.csproj",
+      "msbuildProject": "../Requests.Application/Requests.Application.csproj"
+    },
+    "Requests.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Requests.Domain/Requests.Domain.csproj",
+      "msbuildProject": "../Requests.Domain/Requests.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Requests.Application >= 1.0.0",
+      "Requests.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\בית\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\בית\\Downloads\\CandidateTest\\src\\Requests.Infrastructure\\Requests.Infrastructure.csproj",
+      "projectName": "Requests.Infrastructure",
+      "projectPath": "C:\\Users\\בית\\Downloads\\CandidateTest\\src\\Requests.Infrastructure\\Requests.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\בית\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\בית\\Downloads\\CandidateTest\\src\\Requests.Infrastructure\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\בית\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\בית\\Downloads\\CandidateTest\\src\\Requests.Application\\Requests.Application.csproj": {
+              "projectPath": "C:\\Users\\בית\\Downloads\\CandidateTest\\src\\Requests.Application\\Requests.Application.csproj"
+            },
+            "C:\\Users\\בית\\Downloads\\CandidateTest\\src\\Requests.Domain\\Requests.Domain.csproj": {
+              "projectPath": "C:\\Users\\בית\\Downloads\\CandidateTest\\src\\Requests.Domain\\Requests.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
