@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "syXQC62sPEhTtMejn39h/Smlohsinx2Z0vwZ+ZizS/vVSYwu70AdOmWZTPOQAQanQOVDMfbeT6G4adG/GkzSoQ==",
+  "dgSpecHash": "4D3i6j5HYPc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\בית\\Downloads\\CandidateTest\\src\\Requests.Infrastructure\\Requests.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/workspaces/candidate-test/src/Requests.Infrastructure/Requests.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/microsoft.entityframeworkcore/8.0.19/microsoft.entityframeworkcore.8.0.19.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.19/microsoft.entityframeworkcore.abstractions.8.0.19.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.19/microsoft.entityframeworkcore.analyzers.8.0.19.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.entityframeworkcore.inmemory/8.0.19/microsoft.entityframeworkcore.inmemory.8.0.19.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.extensions.caching.memory/8.0.1/microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.1/microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.extensions.logging/8.0.1/microsoft.extensions.logging.8.0.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

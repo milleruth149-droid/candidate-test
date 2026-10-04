@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vmQ2MefMTZ9LmTqx5AVNpnfEAOiLXHo6GgHyw6kTdeMODYwd05ycnVnXwveSQEJ5v9Dj8LONdjnI5PMp3n+1qQ==",
+  "dgSpecHash": "vJCvjIp23og=",
   "success": true,
-  "projectFilePath": "C:\\Users\\בית\\Downloads\\CandidateTest\\src\\Requests.Domain\\Requests.Domain.csproj",
+  "projectFilePath": "/workspaces/candidate-test/src/Requests.Domain/Requests.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
