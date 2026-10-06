@@ -15,7 +15,7 @@ public sealed class RequestRepository : IRequestRepository
         _db = db;
     }
 
-    // הפעולה הישנה. נשארת זמנית כדי שהפרויקט ימשיך להיבנות.
+    // הפעולה הישנה..
     public Task<List<Request>> GetAllAsync(CancellationToken cancellationToken = default)
     {
         return _db.Requests.ToListAsync(cancellationToken);
@@ -36,7 +36,7 @@ public sealed class RequestRepository : IRequestRepository
         // מוסיפים את הפילטרים של המשתמש.
         query = ApplyFilters(query, criteria);
 
-        // סופרים כמה רשומות מתאימות בסך הכל. כאן ה-DB רץ בפעם הראשונה.
+        //  -DB רץ בפעם הראשונה.
         var totalCount = await query.CountAsync(cancellationToken);
 
         // מוסיפים את המיון לפי בחירת המשתמש.
@@ -97,7 +97,7 @@ public sealed class RequestRepository : IRequestRepository
         if (!string.IsNullOrWhiteSpace(criteria.RequestNumber))
         {
             var number = criteria.RequestNumber.Trim();
-            query = query.Where(x => x.RequestNumber.StartsWith(number));
+            query = query.Where(x => x.RequestNumber.Contains(number));
         }
 
         // סטטוס מרובה: "הסטטוס הוא אחד מאלה". תורגם ל-IN ב-SQL.

@@ -1,0 +1,217 @@
+/* מעטפת ראשית לפרויקט */
+.requests-management-container {
+  padding: 25px;
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  text-align: right;
+  color: #333;
+}
+
+/* שורת הגדרת המשתמש למעלה שתשב מימין בצורה נקייה */
+.user-config-bar {
+  background: #f8f9fa;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  direction: rtl;
+}
+
+/* התאמת שדות הקלט כך שלא יהפכו בגלל אנגלית/עברית */
+.input-medium, .input-short, .select-medium, .select-sort {
+  text-align: right;
+  direction: ltr; /* שומר על מספרים ואנגלית כמו REQ- להיראות תקין */
+}
+
+/* שורת הכפתורים והמיון שתשב יחד בצורה מסודרת */
+.actions-group {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  margin-right: auto; /* דוחף אותם בצורה יפה או משאיר אותם ברצף */
+}
+/* תיקון מעטפת הסינונים שתזרום מימין לשמאל בצורה אחידה */
+.filters-container {
+  background: #e9ecef;
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+  direction: rtl; /* מוודא שכל הפילטרים מתחילים מימין לשמאל */
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.config-label {
+  margin-left: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* קופסת הסטטוסים המיוחדת */
+.status-box {
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  min-width: 200px;
+}
+
+.status-title {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.status-list {
+  max-height: 110px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* שדות קלט (Inputs & Selects) */
+.input-short {
+  width: 70px;
+  padding: 4px;
+  margin-right: 5px;
+}
+
+.input-medium {
+  padding: 6px;
+  width: 140px;
+}
+
+.select-medium {
+  padding: 6px;
+  width: 120px;
+  height: 34px;
+}
+
+.input-date {
+  padding: 6px;
+}
+
+.select-sort {
+  padding: 6px;
+  width: 130px;
+  height: 34px;
+}
+
+.buttons-row {
+  display: flex;
+  gap: 5px;
+}
+
+.btn {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: #007bff;
+  padding: 6px 15px;
+}
+
+.btn-success {
+  background: #28a745;
+}
+
+.btn-secondary {
+  background: #6c757d;
+}
+
+.btn-page {
+  background: #f8f9fa;
+  color: #333;
+  border: 1px solid #ced4da;
+  padding: 5px 10px;
+}
+
+/* טבלת נתונים */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border: 1px solid #ddd;
+}
+
+.data-table th, 
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: right;
+}
+
+.data-table thead tr {
+  background: #e9ecef;
+}
+
+.date-cell {
+  direction: ltr;
+  text-align: right;
+}
+
+.no-data {
+  text-align: center;
+  color: #777;
+  padding: 15px;
+}
+
+/* פקדי דפדפנות ותצוגת טעינה */
+.pagination-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination-info {
+  font-size: 14px;
+}
+
+.loading-text {
+  color: #666;
+}

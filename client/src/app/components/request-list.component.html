@@ -1,0 +1,130 @@
+<div class="requests-management-container">
+  <h2>ניהול בקשות</h2>
+<!-- הצגת הודעת שגיאה אדומה במידה ויש שגיאת ולידציה -->
+<div *ngIf="errorMessage" class="alert-error" style="background-color: #ffe6e6; color: #cc0000; padding: 10px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #ff9999;">
+  <strong>שגיאה:</strong> {{ errorMessage }}
+</div>
+  <!-- שורת הגדרת משתמש שהשרת מחייב -->
+  <div class="user-config-bar">
+    
+    <label class="config-label">
+      <input type="checkbox" [(ngModel)]="isAdministrator" /> מנהל מערכת (Admin)
+    </label>
+    <label class="config-label">
+      <strong>User ID:</strong> 
+      <input type="number" [(ngModel)]="currentUserId" class="input-short" />
+    </label>
+    
+   
+
+    <!-- אזור חיפוש וסינון מלא -->
+    <div class="filters-container">
+      
+      <!-- מספר בקשה -->
+      <div class="filter-group">
+        <label class="filter-label">מספר בקשה:</label>
+        <input type="text" [(ngModel)]="searchFilters.requestNumber" placeholder="לדוגמא: REQ-000..." class="input-medium" />
+      </div>
+
+      <!-- סוג בקשה (Type) - נטען דינמית מהשרת -->
+      <div class="filter-group">
+        <label class="filter-label">סוג בקשה </label>
+        <select [(ngModel)]="searchFilters.type" class="select-medium">
+          <option [ngValue]="null">הכל</option>
+          <option *ngFor="let t of typeOptions" [value]="t.id">
+            {{ t.label || t.name }}
+          </option>
+        </select>
+      </div>
+
+      <!-- סטטוס (Status) - נטען דינמית עם צ'ק-באקסים נקיים -->
+      <div class="status-box">
+        <label class="status-title">סטטוס (ניתן לבחור כמה):</label>
+        <div class="status-list">
+          <label *ngFor="let s of statusOptions" class="checkbox-label">
+            <input type="checkbox" 
+                   [checked]="searchFilters.status.includes(s.id)" 
+                   (change)="onStatusCheckboxChange(s.id, $event)" />
+            {{ s.label || s.name }}
+          </label>
+        </div>
+      </div>
+
+      <!-- מתאריך יצירה -->
+      <div class="filter-group">
+        <label class="filter-label">מתאריך יצירה:</label>
+        <input type="date" [(ngModel)]="searchFilters.createdFrom" class="input-date" />
+      </div>
+
+      <!-- עד תאריך יצירה -->
+      <div class="filter-group">
+        <label class="filter-label">עד תאריך יצירה:</label>
+        <input type="date" [(ngModel)]="searchFilters.createdTo" class="input-date" />
+      </div>
+
+      <!-- מיון וכפתורי חיפוש -->
+      <div class="actions-group">
+        <div class="filter-group">
+          <label class="filter-label">מיון לפי:</label>
+          <select [(ngModel)]="searchFilters.sortBy" (change)="onSearch()" class="select-sort">
+            <option [value]="0">תאריך יצירה</option>
+            <option [value]="1">מספר בקשה</option>
+            <option [value]="2">סטטוס</option>
+            <option [value]="3">סוג בקשה</option>
+          </select>
+        </div>
+        
+        <div class="buttons-row">
+          <button (click)="onSearch()" class="btn btn-success">חפש/סנן</button>
+          <button (click)="resetFilters()" class="btn btn-secondary">איפוס</button>
+        </div>
+      </div>
+      
+    </div>
+
+    <button (click)="loadRequests()" class="btn btn-primary">טען נתונים מחדש</button>
+  </div>
+
+  <!-- הצגת טבלת הנתונים במידה ויש תוצאות -->
+  <div *ngIf="result; else loadingTemplate">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>מספר בקשה</th>
+          <th>קוד לקוח</th>
+          <th>בעלים (Owner ID)</th>
+          <th>סטטוס</th>
+          <th>סוג בקשה</th>
+          <th>תאריך יצירה</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let req of result.items">
+          <td>{{ req.id }}</td>
+          <td>{{ req.requestNumber }}</td>
+          <td>{{ req.customerId }}</td>
+          <td>{{ req.ownerId }}</td>
+          <td>{{ req.status }}</td>
+          <td>{{ req.requestType }}</td>
+          <td class="date-cell">{{ req.createdAt | date:'dd/MM/yyyy HH:mm' }}</td>
+        </tr>
+        <tr *ngIf="result.items.length === 0">
+          <td colspan="7" class="no-data">לא נמצאו בקשות תואמות</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!--  האתמה למיליוני רשומות  פקדי דפדפנות -->
+    <div class="pagination-container">
+      <button (click)="prevPage()" [disabled]="currentPage === 1" class="btn btn-page">הקודם</button>
+      <span class="pagination-info">עמוד {{ currentPage }} מתוך {{ totalPages }} (סה"כ רשומות: {{ result.totalCount }})</span>
+      <button (click)="nextPage()" [disabled]="currentPage >= totalPages" class="btn btn-page">הבא</button>
+    </div>
+  </div>
+
+  <!-- תבנית טעינה -->
+  <ng-template #loadingTemplate>
+    <p class="loading-text">טוען נתונים מהשרת...</p>
+  </ng-template>
+</div>

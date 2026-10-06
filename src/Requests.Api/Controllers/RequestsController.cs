@@ -5,7 +5,6 @@ namespace Requests.Api.Controllers;
 
 // ApiController = ASP.NET בודק אוטומטית את הקלט, ומחזיר 400 אם הוא שבור לגמרי.
 [ApiController]
-// הכתובת: api/requests
 [Route("api/[controller]")]
 public class RequestsController : ControllerBase
 {
@@ -16,11 +15,23 @@ public class RequestsController : ControllerBase
         _service = service;
     }
 
-    // GET api/requests?status=1&status=2&page=1&pageSize=20 ...
-    // לצורך המבחן, המשתמש הנוכחי מגיע דרך headers:
-    //   X-User-Id: מספר המשתמש
-    //   X-Is-Admin: true או false
-    // כשמגדירים אותם כפרמטרים כאן, הם גם מופיעים ב-Swagger ואפשר למלא אותם שם.
+   
+    [HttpGet("statuses")]
+    public async Task<ActionResult<IEnumerable<object>>> GetStatuses(CancellationToken cancellationToken)
+    {
+        var statuses = await _service.GetStatusesAsync(cancellationToken);
+        return Ok(statuses);
+    }
+
+   
+    [HttpGet("types")]
+    public async Task<ActionResult<IEnumerable<object>>> GetTypes(CancellationToken cancellationToken)
+    {
+        var types = await _service.GetTypesAsync(cancellationToken);
+        return Ok(types);
+    }
+//  מחזיר רשימה של בקשות לפי פרמטרי החיפוש, עם תמיכה בדפים.
+// ומבצע אימות שהמשתמש מזוהה ותקין דרך ה-Headers.    
     [HttpGet]
     public async Task<ActionResult<PagedResult<RequestDto>>> Get(
         // FromQuery = ה-Request נבנה מהפרמטרים שבכתובת.

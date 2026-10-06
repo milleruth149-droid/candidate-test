@@ -1,10 +1,12 @@
 using Requests.Domain.Entities;
+
 namespace Requests.Application.Requests;
 
 public sealed class RequestService : IRequestService
 
- {   // תקרות שאנחנו קובעות. הן מגינות על השרת מבקשות קיצוניות.
-    private const int MaxPageSize = 100;
+{
+   // תקרות אבטחה להגנה על השרת מפני בקשות קיצוניות 
+        private const int MaxPageSize = 100;
     private const int MaxPage = 1_000_000;
     private const int MaxRequestNumberLength = 50;
 
@@ -16,6 +18,34 @@ public sealed class RequestService : IRequestService
         _repository = repository;
     }
 
+
+//שליפת הסטטוסים האפשריים דינמית מתוך ה-Enum במערכת
+    public async Task<IEnumerable<object>> GetStatusesAsync(CancellationToken cancellationToken = default)
+    {
+        var statuses = Enum.GetValues<RequestStatus>()
+            .Select(s => new 
+            { 
+                Id = (int)s, 
+                Label = s.ToString() 
+            });
+
+        return await Task.FromResult(statuses);
+    }
+
+// שליפת סוגי הבקשות האפשריים דינמית מתוך ה-Enum במערכת
+    public async Task<IEnumerable<object>> GetTypesAsync(CancellationToken cancellationToken = default)
+    {
+        var types = Enum.GetValues<RequestType>()
+            .Select(t => new 
+            { 
+                Id = (int)t, 
+                Label = t.ToString() 
+            });
+
+        return await Task.FromResult(types);
+    }
+
+    // הפעולה הישנה: מחזירה את כל הבקשות, עם סינון לפי משתמש אם הוא לא מנהל.
     public async Task<IReadOnlyList<RequestDto>> GetRequestsAsync(
         int currentUserId,
         bool isAdministrator,
@@ -41,28 +71,26 @@ public sealed class RequestService : IRequestService
             x.CreatedAt)).ToList();
     }
 
-     // הפעולה החדשה: חיפוש.
+    // חיפוש וסינון בקשות מתקדם הכולל תמיכה בדפדוף (Pagination)
     public async Task<PagedResult<RequestDto>> SearchAsync(
         RequestSearchRequest request,
         int currentUserId,
         bool isAdministrator,
         CancellationToken cancellationToken = default)
     {
-        // שלב 1: בודקים את הקלט. אם יש בעיה, נזרקת RequestValidationException.
+// שלב 1: בדיקת תקינות הקלט (Validation)
+
         Validate(request);
 
-        // שלב 2: ממירים תאריכים. DateOnly (תאריך בלי שעה) הופך לרגע מדויק ב-UTC.
-        // "מ-" מתחיל בחצות של אותו יום.
+        // המרת תאריכים ל-UTC (תחילת היום עד חצות היום העוקב)
         DateTime? fromUtc = request.CreatedFrom?.ToDateTime(TimeOnly.MinValue, DateTimeKind.Utc);
-
-        // "עד-" כולל את היום כולו, ולכן לוקחים את חצות של היום שאחריו, וה-DB יבדוק "קטן מ-".
-        // למשל: "עד 30.6" הופך ל-"קטן מ-1.7 בחצות".
         DateTime? toExclusiveUtc = request.CreatedTo?.AddDays(1).ToDateTime(TimeOnly.MinValue, DateTimeKind.Utc);
 
-        // שלב 3: בונים את החבילה הפנימית. כאן נכנסים פרטי המשתמש מהשרת.
+
+
         var criteria = new RequestSearchCriteria(
             RequestNumber: request.RequestNumber?.Trim(),
-            // Distinct = מסירים כפילויות, למשל status=1&status=1.
+            // Distinct = מסירים כפילויות 
             Statuses: request.Status.Distinct().ToList(),
             RequestType: request.Type,
             CreatedFromUtc: fromUtc,
@@ -74,16 +102,15 @@ public sealed class RequestService : IRequestService
             CurrentUserId: currentUserId,
             IsAdministrator: isAdministrator);
 
-        // שלב 4: מעבירים ל-Repository, שמריץ את השאילתה ב-DB.
+   // שליחה ל-Repository לביצוע השאילתה במסד הנתונים
         return await _repository.SearchAsync(criteria, cancellationToken);
     }
 
-    // בדיקת הקלט. אוספים את כל השגיאות ורק בסוף זורקים, כדי שהמשתמש יראה הכל בבת אחת.
+//בדיקת קלט מקיפה: אוספת את כל השגיאות יחד כדי להציג למשתמש תמונת מצב מלאה  
     private static void Validate(RequestSearchRequest request)
     {
         var errors = new List<string>();
 
-        // עמוד חייב להיות 1 ומעלה. יש גם תקרה, כדי למנוע חישוב דילוג ענקי.
         if (request.Page < 1 || request.Page > MaxPage)
             errors.Add($"page must be between 1 and {MaxPage}.");
 

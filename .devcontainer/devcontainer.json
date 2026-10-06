@@ -1,0 +1,10 @@
+{
+  "name": "C# (.NET)",
+  "portsAttributes": {
+    "60701": {
+      "label": "API Backend",
+      "visibility": "public"
+    }
+  },
+  "forwardPorts": [60701, 4200]
+}
