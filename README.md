@@ -1,89 +1,89 @@
-{\rtf1\fbidis\ansi\ansicpg1255\deff0\nouicompat\deflang1037{\fonttbl{\f0\fnil\fcharset177 Arial;}{\f1\fnil\fcharset0 Arial;}{\f2\fnil Arial;}}
-{\colortbl ;\red0\green0\blue255;\red26\green26\blue26;}
-{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
-\pard\rtlpar\sa200\sl276\slmult1\qc\ul\b\f0\rtlch\fs18  \'ee\'f2\'f8\'eb\'fa \'f0\'e9\'e4\'e5\'ec \'e1\'f7\'f9\'e5\'fa - \'f7\'e5\'e1\'f5 \'fa\'e9\'f2\'e5\'e3 (\f1\ltrch\lang1033 README\f0\rtlch\lang1037 )\ulnone\b0\par
+ מערכת ניהול בקשות - קובץ תיעוד (README)
 
-\pard\rtlpar\sa200\sl276\slmult1\qr\par
-\b\f1\ltrch\lang1033 1\f0\rtlch\lang1037 . \'eb\'e9\'f6\'e3 \'ec\'e4\'f8\'e9\'f5 \'e0\'fa \'e4\'ee\'f2\'f8\'eb\'fa\b0\par
-\b\f1\ltrch\lang1033 Backend\f0\rtlch\lang1037  \b0\line\'e9\'f9 \'ec\'e4\'e9\'eb\'f0\'f1  \'ec\'fa\'e9\'f7\'e9\'e9\'fa \'f6\'e3 \'e4\'f9\'f8\'fa \'e1\'f0\'fa\'e9\'e1 \'e4\'e6\'e4 :\par
-  \f1\ltrch\lang1033 /candidate-test/src/Requests.Api  \par
-\f0\rtlch\lang1037\line  \'e5\'ec\'e4\'f8\'e9\'f5 \'e0\'fa \'e4\'f4\'f7\'e5\'e3\'e4:\par
-\par
-\f1\ltrch\lang1033 dotnet run --urls "{{\field{\*\fldinst{HYPERLINK http://localhost:60701 }}{\fldrslt{http://localhost:60701\ul0\cf0}}}}\f0\rtlch\fs18\lang1037 "\par
-\par
-\line\b\f1\ltrch\lang1033 Frontend\b0\f0\rtlch\lang1037 : \line\'e9\'f9 \'ec\'e4\'e9\'eb\'f0\'f1 \'ec\'fa\'e9\'f7\'e9\'e9\'fa \'e4\'ec\'f7\'e5\'e7 (\f1\ltrch\lang1033 client\f0\rtlch\lang1037 /) \'e5\'ec\'e4\'f8\'e9\'f5:\par
-\f1\ltrch\lang1033 npm start\par
-\f0\rtlch\lang1037\par
-\b 2. \'e4\'f8\'f6\'fa \'e1\'e3\'e9\'f7\'e5\'fa (\f1\ltrch\lang1033 Tests\f0\rtlch\lang1037 )\b0\par
-\'e4\'e1\'e3\'e9\'f7\'e5\'fa \'f0\'ee\'f6\'e0\'e5\'fa \'e1\'fa\'e9\'f7\'e9\'e9\'e4 \f1\ltrch\lang1033 tests/Requests.Tests\f0\rtlch\lang1037 . \'eb\'e3\'e9 \'ec\'e4\'f8\'e9\'f5 \'e0\'e5\'fa\'ef \'e9\'f9 \'ec\'e4\'f7\'ec\'e9\'e3:\par
-\f1\ltrch\lang1033 dotnet test\par
-\b\f0\rtlch\lang1037\par
-3. \'e8\'eb\'f0\'e5\'ec\'e5\'e2\'e9\'e5\'fa \'f9\'f0\'e1\'e7\'f8\'e5 \'e5\'ee\'e3\'e5\'f2?.\par
-\b0 .\f1\ltrch\lang1033 NET 8 (C#)\f0\rtlch\lang1037 : \'f0\'f9\'e0\'f8\'fa\'e9 \'f2\'ec \'e4\'f7\'e5\'e3  \cf2\f1\ltrch\lang1033 Repository\f0\rtlch\lang1037   \'e4\'f7\'e9\'e9\'ed\cf0  \f1\ltrch\lang1033\-\-\-\-\-\-\f0\rtlch\lang1037\par
-\f1\ltrch\lang1033 xUnit & Fake Repositories\f0\rtlch\lang1037 : \'f9\'e9\'ee\'f9\'e5 \'ec\'eb\'fa\'e9\'e1\'fa \'e1\'e3\'e9\'f7\'e5\'fa \'ee\'e1\'e5\'e3\'e3\'e5\'fa \'e5\'f0\'f7\'e9\'e5\'fa \'e1\'f8\'ee\'fa \'e4\'ec\'e5\'e2\'e9\'f7\'e4, \'e4\'ee\'e0\'f4\'f9\'f8\'e5\'fa \'ec\'e1\'e3\'e5\'f7 \'e0\'fa \'e4-\f1\ltrch\lang1033 Service\f0\rtlch\lang1037  \'e1\'ec\'e9 \'fa\'ec\'e5\'fa \'e1\'ee\'f1\'e3 \'f0\'fa\'e5\'f0\'e9\'ed \'e0\'ee\'e9\'fa\'e9.\par
-\f1\ltrch\lang1033 Angular / Modern Frontend\f0\rtlch\lang1037 : \'f0\'e1\'e7\'f8 \'ec\'e1\'f0\'e9\'e9\'fa \'ee\'ee\'f9\'f7 \'ee\'f9\'fa\'ee\'f9 \'ee\'e4\'e9\'f8, \'e3\'e9\'f0\'ee\'e9 \'e5\'ee\'fa\'f7\'e3\'ed \'e4\'ee\'e1\'e5\'f1\'f1 \'f2\'ec \'f8\'eb\'e9\'e1\'e9\'ed (\f1\ltrch\lang1033 Components\f0\rtlch\lang1037 ).\par
-\par
-\b 4. \'e4\'f0\'e7\'e5\'fa \'f2\'e1\'e5\'e3\'e4 \'e5\'e4\'e7\'ec\'e8\'e5\'fa \'e8\'eb\'f0\'e9\'e5\'fa\b0\par
-\b\'e4\'f0\'e7\'e4\b0  \'e4\'ee\'f9\'fa\'ee\'f9\'e9\'ed \'e4\'ee\'e1\'f6\'f2\'e9\'ed \'f4\'f2\'e5\'ec\'e5\'fa \'e1\'ee\'f2\'f8\'eb\'fa \'f2\'e5\'e1\'f8\'e9\'ed \'fa\'e4\'ec\'e9\'ea \'e0\'e9\'ee\'e5\'fa (\f1\ltrch\lang1033 Authentication\f0\rtlch\lang1037 ), \'e5\'e4\'f0\'fa\'e5\'f0\'e9\'ed \'f2\'ec\'e9\'e4\'ed (\'eb\'ee\'e5 \'e6\'e9\'e4\'e5\'e9 \'ee\'f9\'fa\'ee\'f9 \'e5\'e4\'e0\'ed \'e4\'e5\'e0 \'ee\'f0\'e4\'ec) \'ee\'e5\'f2\'e1\'f8\'e9\'ed \'e1\'f6\'e5\'f8\'e4 \'ee\'e0\'e5\'e1\'e8\'e7\'fa \'ee\'f7\'e5\'f0\'e8\'f7\'f1\'e8 \'e4\'f9\'f8\'fa.\par
-\b\'e4\'e7\'ec\'e8\'e4 \'e8\'eb\'f0\'e9\'fa \b0 (\'f4\'f2\'e5\'ec\'e4 \'e0\'f1\'e9\'f0\'eb\'f8\'e5\'f0\'e9\'fa \'ee\'e5\'ec \'f1\'e9\'f0\'eb\'f8\'e5\'f0\'e9\'fa): \'e4\'f4\'f8\'e3\'f0\'e5 \'f4\'f2\'e5\'ec\'e5\'fa \'f8\'f7\'f2 \'eb\'e1\'e3\'e5\'fa (\'eb\'ee\'e5 \'f9\'ec\'e9\'e7\'fa \'e4\'fa\'f8\'e0\'e5\'fa) \'ee\'e4\'e6\'f8\'e9\'ee\'e4 \'e4\'ee\'f8\'eb\'e6\'e9\'fa \'f9\'ec \'e9\'f6\'e9\'f8\'fa \'e4\'e1\'f7\'f9\'e4.\par
-\b\'e7\'ec\'e5\'f4\'e4 \'f9\'f0\'f9\'f7\'ec\'e4\b0 : \'e1\'e9\'f6\'e5\'f2 \'f7\'f8\'e9\'e0\'fa \f1\ltrch\lang1033 HTTP\f0\rtlch\lang1037  \'e9\'f9\'e9\'f8\'e4 \'ec\'f9\'e9\'f8\'e5\'fa \'e4\'e4\'fa\'f8\'e0\'e5\'fa \'e1\'e6\'ee\'ef \'e0\'ee\'fa.\par
-\b\'ec\'ee\'e4 \'e1\'e7\'f8\'f0\'e5 \'e0\'e7\'f8\'fa: \b0\'e0\'ed \'f9\'e9\'f8\'e5\'fa \'e4\'e4\'fa\'f8\'e0\'e5\'fa \'f0\'e5\'f4\'ec \'e6\'ee\'f0\'e9\'fa, \'f7\'f8\'e9\'e0\'e4 \'e9\'f9\'e9\'f8\'e4 \'e4\'e9\'e9\'fa\'e4 \'e2\'e5\'f8\'ee\'fa \'ec\'eb\'ea \'f9\'e4\'ee\'f9\'fa\'ee\'f9 \'ec\'e0 \'e9\'eb\'e5\'ec \'e4\'e9\'e4 \'ec\'e9\'f6\'e5\'f8 \'e1\'f7\'f9\'e4 \'e7\'e3\'f9\'e4. \'f9\'e9\'ee\'e5\'f9 \'e1\'fa\'e5\'f8 \'e4\'e5\'e3\'f2\'e5\'fa (\f1\ltrch\lang1033 Message Broker\f0\rtlch\lang1037 ) \'ee\'e5\'f0\'f2 \'fa\'ec\'e5\'fa \'eb\'e6\'e5 \'e5\'ee\'e1\'e8\'e9\'e7 \'f9\'e4\'ee\'f2\'f8\'eb\'fa \'fa\'e9\'f9\'e0\'f8 \'e9\'f6\'e9\'e1\'e4 \'e5\'f2\'ee\'e9\'e3\'e4 \'e1\'f4\'f0\'e9 \'fa\'f7\'ec\'e5\'fa.\par
-\b\f1\ltrch\lang1033 5\f0\rtlch\lang1037 . \'ee\'e4 \'ec\'e0 \'e4\'f1\'f4\'f7\'fa\'e9 \'e5\'e0\'e9\'ea \'e4\'e9\'e9\'fa\'e9 \'ee\'ee\'f9\'e9\'eb\'e4\par
-\b0\'ee\'e4 \'e7\'f1\'f8: \'e7\'e9\'e1\'e5\'f8 \'ee\'ec\'e0 \'ee\'f7\'f6\'e4 \'ec\'f7\'f6\'e4 (\f1\ltrch\lang1033 End-to-End\f0\rtlch\lang1037 ) \'f9\'ec \'eb\'ec \'e4\'ee\'e9\'f7\'f8\'e5-\'f9\'e9\'f8\'e5\'fa\'e9\'ed \'e1\'f4\'e5\'f2\'ec \'e5\'e4\'f6\'e2\'fa \'e4\'fa\'f8\'e0\'e5\'fa \'e1\'e6\'ee\'ef \'e0\'ee\'fa (\f1\ltrch\lang1033 WebSockets\f0\rtlch\lang1037 ) \'e1\'ee\'ee\'f9\'f7 \'e4\'ee\'f9\'fa\'ee\'f9.\par
-\'e0\'e9\'ea \'ec\'e4\'ee\'f9\'e9\'ea: \'ec\'e4\'e8\'ee\'e9\'f2 \'e1\'f4\'e5\'f2\'ec \f1\ltrch\lang1033 Message Broker\f0\rtlch\lang1037  \'eb\'ee\'e5 \f1\ltrch\lang1033 RabbitMQ\f0\rtlch\lang1037  \'ec\'fa\'f7\'f9\'e5\'f8\'fa \'ee\'e1\'e5\'f1\'f1\'fa-\'e0\'e9\'f8\'e5\'f2\'e9\'ed, \'e5\'ec\'e4\'e5\'f1\'e9\'f3 \'e1\'e3\'e9\'f7\'e5\'fa \'e0\'e5\'e8\'e5\'ee\'e8\'e9\'e5\'fa \'ee\'f7\'e9\'f4\'e5\'fa \'e2\'ed \'e1\'f6\'e3 \'e4\'ec\'f7\'e5\'e7.\par
-\par
-\b  \'e7\'ec\'f7 \'e1' - \'e0\'f8\'eb\'e9\'e8\'f7\'e8\'e5\'f8\'fa \f1\ltrch\lang1033 Microservices\f0\rtlch\lang1037  \'e5\'fa\'f7\'f9\'e5\'f8\'fa \'e0\'ee\'e9\'f0\'e4\b0\par
-\'eb\'f9\'e4\'ee\'f2\'f8\'eb\'fa \'e2\'e3\'ec\'e4 \'e5\'f2\'e5\'e1\'f8\'fa \'ec-\f1\ltrch\lang1033 Microservices\f0\rtlch\lang1037 , \'e4\'e7\'ec\'e5\'f7\'e4 \'e5\'e4\'f4\'fa\'f8\'e5\'f0\'e5\'fa \'e4\'f0\'e1\'e7\'f8\'e9\'ed \'e4\'ed:\par
-\b\'e0. \'e7\'ec\'e5\'f7\'e4 \'e0\'f4\'f9\'f8\'e9\'fa \'ec\'f9\'e9\'f8\'e5\'fa\'e9\'ed:\b0\par
-\f1\ltrch\lang1033 Requests Service\f0\rtlch\lang1037 : \'e0\'e7\'f8\'e0\'e9 \'f2\'ec \'f0\'e9\'e4\'e5\'ec \'e4\'e1\'f7\'f9\'e5\'fa, \'e4\'ec\'e5\'e2\'e9\'f7\'e4 \'e4\'f2\'f1\'f7\'e9\'fa \'e5\'e4\'e7\'e9\'f4\'e5\'f9\'e9\'ed.\par
-\f1\ltrch\lang1033 Users / Identity Service\f0\rtlch\lang1037 : \'e0\'e7\'f8\'e0\'e9 \'f2\'ec \'f0\'e9\'e4\'e5\'ec \'e4\'ee\'f9\'fa\'ee\'f9\'e9\'ed, \'e4\'e0\'e9\'ee\'e5\'fa \'e5\'e4\'e4\'f8\'f9\'e0\'e5\'fa.\par
-\f1\ltrch\lang1033 Notifications Service\f0\rtlch\lang1037 : \'e0\'e7\'f8\'e0\'e9 \'e0\'ea \'e5\'f8\'f7 \'f2\'ec \'f9\'ec\'e9\'e7\'fa \'e4\'fa\'f8\'e0\'e5\'fa (\'eb\'e2\'e5\'ef \'e0\'e9\'ee\'e9\'e9\'ec \'e0\'e5 \f1\ltrch\lang1033 SMS\f0\rtlch\lang1037 ) \'ec\'ee\'f9\'fa\'ee\'f9\'e9\'ed.\par
-\b\'e4\'fa\'e5\'f2\'ec\'e5\'fa\b0 : \'ee\'e0\'f4\'f9\'f8 \'f1\'f7\'ec\'e1\'e9\'ec\'e9\'e5\'fa (\'e4\'e2\'e3\'ec\'fa \'f8\'f7 \'e0\'fa \'e4\'f9\'e9\'f8\'e5\'fa \'f9\'f1\'e5\'e1\'ec \'ee\'f2\'e5\'ee\'f1) \'e5\'e1\'e9\'e3\'e5\'e3 \'fa\'f7\'ec\'e5\'fa (\'f0\'f4\'e9\'ec\'e4 \'e1\'f9\'e9\'f8\'e5\'fa \'e4\'e4\'fa\'f8\'e0\'e5\'fa \'ec\'e0 \'ee\'f9\'e1\'e9\'fa\'e4 \'e0\'fa \'e9\'f6\'e9\'f8\'fa \'e4\'e1\'f7\'f9\'e5\'fa).\b\par
-\'e1. \'fa\'f7\'f9\'e5\'f8\'fa \'e0\'ee\'e9\'f0\'e4 \'e1\'fa\'f8\'e7\'e9\'f9 \'f9\'ec \'f0\'f4\'e9\'ec\'fa \'f9\'e9\'f8\'e5\'fa \'e4\'e4\'fa\'f8\'e0\'e5\'fa:\par
-\b0\'eb\'e0\'f9\'f8 \'e1\'f7\'f9\'e4 \'f0\'e5\'f6\'f8\'fa \'e0\'e5 \'ee\'f9\'f0\'e4 \'f1\'e8\'e8\'e5\'f1, \'f9\'e9\'f8\'e5\'fa \'e4\'e1\'f7\'f9\'e5\'fa \'e0\'e9\'f0\'e5 \'f4\'e5\'f0\'e4 \'e9\'f9\'e9\'f8\'e5\'fa \'ec\'f9\'e9\'f8\'e5\'fa \'e4\'e4\'fa\'f8\'e0\'e5\'fa.\par
-\'e1\'ee\'f7\'e5\'ed \'e6\'e0\'fa, \'e4\'e5\'e0 \'ee\'f4\'f8\'f1\'ed \'e0\'e9\'f8\'e5\'f2 (\f1\ltrch\lang1033 Event\f0\rtlch\lang1037 ) \'ec\'fa\'e5\'ea \'fa\'e5\'f8 \'e4\'e5\'e3\'f2\'e5\'fa (\f1\ltrch\lang1033 Message Broker\f0\rtlch\lang1037  \'eb\'ee\'e5 \f1\ltrch\lang1033 RabbitMQ\f0\rtlch\lang1037 ).\par
-\'fa\'e5\'f8 \'e4\'e4\'e5\'e3\'f2\'e5\'fa \'f9\'e5\'ee\'f8 \'e0\'fa \'e4\'e4\'e5\'e3\'f2\'e5\'fa \'e1\'e0\'e5\'f4\'ef \'ee\'e0\'e5\'e1\'e8\'e7. \'f9\'e9\'f8\'e5\'fa \'e4\'e4\'fa\'f8\'e0\'e5\'fa \'f6\'e5\'f8\'ea \'e0\'fa \'e4\'e4\'e5\'e3\'f2\'e5\'fa \'e1\'f7\'f6\'e1 \'f9\'ec\'e5 \'ee\'f8\'e2\'f2 \'f9\'e4\'e5\'e0 \'e7\'e5\'e6\'f8 \'ec\'f4\'f2\'e9\'ec\'e5\'fa (\f1\ltrch\lang1033 At-least-once delivery\f0\rtlch\lang1037 ), \'e5\'e1\'eb\'ea \'f0\'ee\'f0\'f2 \'e0\'e5\'e1\'e3\'ef \'ee\'e9\'e3\'f2 \'e5\'e4\'ee\'f2\'f8\'eb\'fa \'ee\'ee\'f9\'e9\'eb\'e4 \'ec\'fa\'f4\'f7\'e3 \'f8\'e2\'e9\'ec \'e2\'ed \'e1\'e6\'ee\'ef \'fa\'f7\'ec\'e5\'fa.\par
-\par
-\line\line\b\'ee\'e4 \'e4\'f4\'f8\'e5\'e9\'f7\'e8 \'ee\'eb\'e9\'ec \'ee\'f4\'e5\'f8\'e8 \'e9\'e5\'fa\'f8\b0\par
-\b\f1\ltrch\lang1033 client\b0\par
-\f0\rtlch\lang1037  \b\'f7\'e5\'ee\'f4\'e5\'f0\'f0\'e8\'e4 \f1\ltrch\lang1033 request-list.\f0\rtlch\lang1037  \b0\'f9\'ee\'f6\'e9\'e2\'e4 \'e0\'fa \'f4\'f8\'ee\'e8\'f8\'e9 \'e4\'e7\'e9\'f4\'e5\'f9 \'e5\'e0\'f4\'f9\'f8\'e5\'fa \'ec\'e8\'f2\'e5\'ef \'ee\'e7\'e3\'f9 \'e0\'fa \'e4\'fa\'e5\'eb\'ef \'ee\'e4\'f9\'f8\'fa \'e5\'e8\'e1\'ec\'fa \'fa\'e5\'f6\'e0\'e5\'fa \'e9\'f4\'e4\f1\ltrch\lang1033 .\f0\rtlch\lang1037  \par
-\b\f1\ltrch\lang1033 models\b0\f0\rtlch\lang1037 - \'eb\'ec \'e4\'e0\'e5\'e1\'e9\'f7\'e8\'e9\'ed \'f9\'ee\'f9\'fa\'ee\'f9\'e9\'ed \'e1\'e4\'ed \'e1\'f4\'f8\'e5\'e9\'f7\'e8\f1\ltrch\lang1033 .\f0\rtlch\lang1037  \par
-\b\f1\ltrch\lang1033 Services\b0\f0\rtlch\lang1037 -\'e6\'e4\'e5 \'e4-\f1\ltrch\lang1033 Service\f0\rtlch\lang1037  \'f9\'ec \'e4\'e1\'f7\'f9\'e5\'fa \'e1\'f6\'e3 \'e4\'ec\'f7\'e5\'e7.\'e3\'e0\'e2\'fa\'e9 \'ec\'e4\'f2\'e1\'e9\'f8 \'e3\'f8\'eb\'e5 \'e0\'fa \'e4-\f1\ltrch\lang1033 Headers\f0\rtlch\lang1037  \'f9\'ec \'e6\'e9\'e4\'e5\'e9 \'e4\'ee\'f9\'fa\'ee\'f9 \'e5\'e4\'e4\'f8\'f9\'e0\'e5\'fa \'eb\'f4\'e9 \'f9\'e4\'f9\'f8\'fa \'e3\'e5\'f8\'f9, \'e5\'e1\'f0\'e9\'fa\'e9 \'e0\'fa \'e4-\f1\ltrch\lang1033 Query Parameters\f0\rtlch\lang1037  \'e1\'f6\'e5\'f8\'e4 \'e3\'e9\'f0\'ee\'e9\'fa \'eb\'ea \'f9\'eb\'ec \'f4\'e9\'ec\'e8\'f8 \'f9\'e4\'ee\'f9\'fa\'ee\'f9 \'e1\'e5\'e7\'f8 \'f0\'f9\'ec\'e7 \'e1\'f6\'e5\'f8\'e4 \'ee\'e3\'e5\'e9\'f7\'fa \'ec\'f9\'f8\'fa.\par
-\'f7\'e5\'e1\'f5 \b\f1\ltrch\lang1033 Routes\f0\rtlch\lang1037  \b0\'f9\'ee\'e2\'e3\'e9\'f8 \'ec\'e9 \'e0\'fa \'e4\'f7\'e5\'ee\'f4\'f0\'f0\'e8\'e4 \'f9\'ec\'e9 \'f9\'fa\'e5\'f6\'e2 \'f8\'e0\'f9\'e5\'f0\'e4 \'e1\'f2\'ec\'e9\'e9\'fa \'e4\'e0\'fa\'f8\f1\ltrch\lang1033 .\par
-\f0\rtlch\lang1037\'e5\'f2\'e5\'e3...\par
-\b\f1\ltrch\lang1033 server\b0\f0\rtlch\lang1037\par
-\b\f1\ltrch\lang1033 CONTROLER\f0\rtlch\lang1037  \b0 -\par
-1. \'f2\'e1\'e5\'f8 \'eb\'ec \'e4\'e1\'f7\'f9\'e5\'fa \par
-2. \'f2\'e1\'e5\'f8 \'e4\'f1\'e8\'e8\'e5\'f1\'e9\'ed- \'ee\'eb\'e9\'e5\'e5\'ef \'f9\'e6\'e4 \'f8\'f9\'e9\'ee\'e4 \'f9\'ee\'e2\'e9\'f2\'e4 \'ee\'e4\'f9\'f8\'fa \par
-3. \'f2\'e1\'e5\'f8 \'f1\'e5\'e2\'e9 \'e4\'e1\'f7\'f9\'e5\'fa -\'ee\'eb\'e9\'e5\'e5\'ef \'f9\'e6\'e4 \'f8\'f9\'e9\'ee\'e4 \'f9\'ee\'e2\'e9\'f2\'e4 \'ee\'e4\'f9\'f8\'fa \par
-\b\f1\ltrch\lang1033 SERVICE\b0\f0\rtlch\lang1037 - \'eb\'e5\'ec\'ec \f1\ltrch\lang1033 interface\f0\rtlch\lang1037  \'ee\'fa\'e0\'e9\'ed.\par
-1. \'f2\'e1\'e5\'f8 \'eb\'ec \'e4\'e1\'f7\'f9\'e5\'fa - \'e1\'f0\'e9\'fa\'e9 \'f4\'e5\'f0\'f7\'f6\'e9\'e4 \'e7\'e3\'f9\'e4 \'f9\'fa\'f2\'e1\'e5\'e3 \'f2\'ed \'f4\'f8\'ee\'e8\'f8\'e9 \'e4\'e7\'e9\'f4\'e5\'f9 \'e5\'e4\'f1\'e9\'f0\'e5\'ef.-\f1\ltrch\lang1033 SearchAsync\f0\rtlch\lang1037\par
-2. \'f2\'e1\'e5\'f8 \'e4\'f1\'e8\'e8\'e5\'f1\'e9\'ed-\f1\ltrch\lang1033 GetStatusesAsync\f0\rtlch\lang1037\par
-3. \'f2\'e1\'e5\'f8 \'f1\'e5\'e2\'e9 \'e4\'e1\'f7\'f9\'e5\'fa -\f1\ltrch\lang1033 GetTypesAsync\par
-\f0\rtlch\lang1037 4. \f1\ltrch\lang1033 Validate\f0\rtlch\lang1037 - \'e1\'e3\'e9\'f7\'fa \'e4\'e5\'ec\'e9\'e3\'f6\'e9\'e5\'fa\par
-\b\f1\ltrch\lang1033 REPOSITORY\f0\rtlch\lang1037  \b0 - \'eb\'e5\'ec\'ec \f1\ltrch\lang1033 interface\f0\rtlch\lang1037  \'ee\'fa\'e0\'e9\'ed.\par
-\'f2\'e1\'e5\'f8 \'eb\'ec \'e4\'e1\'f7\'f9\'e5\'fa - \f1\ltrch\lang1033 SearchAsync\f0\rtlch\lang1037   \f2\ltrch\endash\f1\lang1033  \f0\rtlch\lang1037\'f9\'e0\'e9\'ec\'fa\'fa \f1\ltrch\lang1033 EF Core\f0\rtlch\lang1037  \'ee\'fa\'f7\'e3\'ee\'fa \'e4\'eb\'e5\'ec\'ec\'fa \f1\ltrch\lang1033 AsNoTracking\f0\rtlch\lang1037 , \'e7\'e9\'fa\'e5\'ea \'ec\'f2\'ee\'e5\'e3\'e9\'ed (\f1\ltrch\lang1033 Skip/Take\f0\rtlch\lang1037 ), \'f1\'f4\'e9\'f8\'fa \'eb\'e5\'ec\'ec (\f1\ltrch\lang1033 CountAsync\f0\rtlch\lang1037 ), \'e5\'ee\'e9\'f4\'e5\'e9 \'e9\'f9\'e9\'f8 \'ec-\f1\ltrch\lang1033 DTO (Projection)\f0\rtlch\lang1037 .\par
-\f1\ltrch\lang1033 ApplyPermissions\f2\lang1037  \endash  \f0\rtlch\'f4\'e5\'f0\'f7\'f6\'e9\'e9\'fa \'f2\'e6\'f8 \'f4\'f8\'e8\'e9\'fa \'ec\'e0\'eb\'e9\'f4\'fa \'e4\'f8\'f9\'f2\'e5\'fa \'e1\'f8\'ee\'fa \'ee\'f1\'e3 \'e4\'f0\'fa\'e5\'f0\'e9\'ed.\par
-\f1\ltrch\lang1033 ApplyFilters\f2\lang1037  \endash  \f0\rtlch\'f4\'e5\'f0\'f7\'f6\'e9\'e9\'fa \'f2\'e6\'f8 \'e3\'e9\'f0\'ee\'e9\'fa \'ec\'e1\'f0\'e9\'e9\'fa \'fa\'f0\'e0\'e9 \f1\ltrch\lang1033 WHERE\f0\rtlch\lang1037  \'ec\'f4\'e9 \'e1\'e7\'e9\'f8\'fa \'e4\'ee\'f9\'fa\'ee\'f9 (\'eb\'e5\'ec\'ec \'e8\'e5\'e5\'e7\'e9 \'fa\'e0\'f8\'e9\'eb\'e9\'ed \'ee\'e3\'e5\'e9\'f7\'e9\'ed \'e1-\f1\ltrch\lang1033 UTC\f0\rtlch\lang1037 ).\par
-\f1\ltrch\lang1033 ApplySorting\f2\lang1037  \endash  \f0\rtlch\'f4\'e5\'f0\'f7\'f6\'e9\'e9\'fa \'f2\'e6\'f8 \'ec\'ee\'e9\'e5\'ef \'e9\'f6\'e9\'e1 \'e4\'eb\'e5\'ec\'ec\'fa \'ee\'e9\'e5\'ef \'ee\'f9\'f0\'e9 \'ec\'f4\'e9 \f1\ltrch\lang1033 Id\f0\rtlch\lang1037  \'ec\'ee\'f0\'e9\'f2\'fa \'f7\'f4\'e9\'f6\'e5\'fa \'f8\'f9\'e5\'ee\'e5\'fa \'e1\'e9\'ef \'f2\'ee\'e5\'e3\'e9\'ed.\line\par
-\b\f1\ltrch\lang1033 tests\par
--SERVICE\par
-REPOSITORY\f0\rtlch\lang1037  \f1\ltrch\lang1033 -\par
-\f0\rtlch\lang1037 1. \'e1\'e3\'e9\'f7\'e5\'fa \'e4\'f8\'f9\'e0\'e5\'fa (\f1\ltrch\lang1033 Permissions\f0\rtlch\lang1037 )\par
-* \f1\ltrch\lang1033 RegularUser_SeesOnlyOwnedOrAssignedRequests\f0\rtlch\lang1037 - \'ee\'e4 \'e4\'e9\'e0 \'e1\'e5\'e3\'f7\'fa: \'f9\'ee\'f9\'fa\'ee\'f9 \'f8\'e2\'e9\'ec (\'ec\'e0 \'ee\'f0\'e4\'ec) \'f8\'e5\'e0\'e4 \'e0\'ea \'e5\'f8\'f7 \'e0\'fa \'e4\'e1\'f7\'f9\'e5\'fa \'f9\'f9\'e9\'e9\'eb\'e5\'fa \'ec\'e5\par
-\f1\ltrch\lang1033 Administrator_SeesAllRequests*\f0\rtlch\lang1037 - \'ee\'e4 \'e4\'e9\'e0 \'e1\'e5\'e3\'f7\'fa: \'f9\'ee\'f0\'e4\'ec \'ee\'f2\'f8\'eb\'fa (\f1\ltrch\lang1033 admin: true\f0\rtlch\lang1037 ) \'f2\'e5\'f7\'f3 \'e0\'fa \'ee\'e2\'e1\'ec\'fa \'e4\'e4\'f8\'f9\'e0\'e5\'fa \'e5\'f8\'e5\'e0\'e4 \'e0\'fa \'eb\'ec \'e4\'e1\'f7\'f9\'e5\'fa \'e1\'ee\'f2\'f8\'eb\'fa.\par
-\f1\ltrch\lang1033 Filters_AreCombinedWithPermissions_NotBypassingThem*\f0\rtlch\lang1037 -\'ee\'e4 \'e4\'e9\'e0 \'e1\'e5\'e3\'f7\'fa: \'f9\'e0\'ed \'ee\'f9\'fa\'ee\'f9 \'f8\'e2\'e9\'ec \'ee\'f4\'f2\'e9\'ec \'f4\'e9\'ec\'e8\'f8 (\'ec\'ee\'f9\'ec: "\'e4\'f6\'e2 \'e1\'f7\'f9\'e5\'fa \'f9\'e4\'e5\'f9\'ec\'ee\'e5"), \'e4\'f4\'e9\'ec\'e8\'f8 \'ec\'e0 \'f2\'e5\'f7\'f3 \'e0\'fa \'e7\'e5\'f7\'e9 \'e4\'e0\'e1\'e8\'e7\'e4. \'e4\'e5\'e0 \'e9\'f8\'e0\'e4 \'f8\'f7 \'e0\'fa \'e4\'e1\'f7\'f9\'e5\'fa \'f9\'e4\'e5\'f9\'ec\'ee\'e5 \'f9\'f9\'e9\'e9\'eb\'e5\'fa \'ec\'e5 \'e1\'ec\'e1\'e3, \'e5\'ec\'e0 \'f9\'ec \'ee\'f9\'fa\'ee\'f9\'e9\'ed \'e0\'e7\'f8\'e9\'ed.\f1\ltrch\lang1033  \par
-\b0\f0\rtlch\lang1037 2. \b\'e1\'e3\'e9\'f7\'e5\'fa \'f4\'e9\'ec\'e8\'f8\'e9\'ed (\f1\ltrch\lang1033 Filters\f0\rtlch\lang1037 )\b0\par
-\b\f1\ltrch\lang1033 *StatusFilter_WithMultipleValues_ReturnsAnyOfThem\f0\rtlch\lang1037 -  \b0\'ee\'e4 \'e4\'e9\'e0 \'e1\'e5\'e3\'f7\'fa: \'f9\'eb\'e0\'f9\'f8 \'e1\'e5\'e7\'f8\'e9\'ed \'ee\'f1\'f4\'f8 \'f1\'e8\'e8\'e5\'f1\'e9\'ed \'e1\'e5-\'e6\'ee\'f0\'e9\'fa (\'ec\'ee\'f9\'ec: \'e2\'ed "\'e7\'e3\'f9" \'e5\'e2\'ed "\'e4\'e5\'f9\'ec\'ed"), \'e4\'ee\'f2\'f8\'eb\'fa \'ee\'e7\'e6\'e9\'f8\'e4 \'e0\'fa \'eb\'ec \'e4\'e1\'f7\'f9\'e5\'fa \'f9\'fa\'e5\'e0\'ee\'e5\'fa \'ec\'e0\'e7\'e3 \'ee\'e4\'f1\'e8\'e8\'e5\'f1\'e9\'ed \'e4\'ec\'ec\'e5 (\'eb\'ee\'e5 \'f4\'f7\'e5\'e3\'fa \f1\ltrch\lang1033 IN\f0\rtlch\lang1037  \'e1-\f1\ltrch\lang1033 SQL\f0\rtlch\lang1037 ).\par
-\b *\f1\ltrch\lang1033 RequestNumber_ContainsString_MatchesEvenInTheMiddle\f0\rtlch\lang1037  \b0 - \'ee\'e4 \'e4\'e9\'e0 \'e1\'e5\'e3\'f7\'fa: \'f9\'e4\'e7\'e9\'f4\'e5\'f9 \'ec\'f4\'e9 \'ee\'f1\'f4\'f8 \'e1\'f7\'f9\'e4 \'ee\'fa\'e1\'f6\'f2 \'e1\'fa\'e1\'f0\'e9\'fa "\'ee\'eb\'e9\'ec" (\f1\ltrch\lang1033 Contains\f0\rtlch\lang1037 ) \'e5\'ec\'e0 \'f8\'f7 "\'ee\'fa\'e7\'e9\'ec \'e1-". \'e4\'e9\'e0 \'ee\'e5\'e5\'e3\'e0\'fa \'f9\'e7\'e9\'f4\'e5\'f9 \'f9\'ec \'ee\'e7\'f8\'e5\'e6\'fa \'f9\'f0\'ee\'f6\'e0\'fa \'e1\'e0\'ee\'f6\'f2 \'e4\'ee\'f1\'f4\'f8 (\'eb\'ee\'e5 "\f1\ltrch\lang1033 00\f0\rtlch\lang1037 " \'e1\'fa\'e5\'ea \f1\ltrch\lang1033 REQ-100\f0\rtlch\lang1037  \'e5-\f1\ltrch\lang1033 REQ-200\f0\rtlch\lang1037 ) \'e0\'eb\'ef \'ee\'f6\'ec\'e9\'e7 \'ec\'ee\'f6\'e5\'e0 \'e0\'fa \'eb\'ec \'e4\'f8\'f9\'e5\'ee\'e5\'fa \'e4\'f8\'ec\'e5\'e5\'f0\'e8\'e9\'e5\'fa.\par
-\b\f1\ltrch\lang1033 DateRange_EndIsExclusive_SoWholeLastDayIsIncluded\b0\f0\rtlch\lang1037\par
-\'ee\'e4 \'e4\'e9\'e0 \'e1\'e5\'e3\'f7\'fa: \'f9\'e7\'e9\'f4\'e5\'f9 \'ec\'f4\'e9 \'e8\'e5\'e5\'e7 \'fa\'e0\'f8\'e9\'eb\'e9\'ed \'f2\'e5\'e1\'e3 \'f0\'eb\'e5\'ef \'f2\'ed \'e2\'e1\'e5\'ec \'f2\'ec\'e9\'e5\'ef \'e1\'ec\'f2\'e3\'e9, \'eb\'ea \'f9\'e9\'e5\'ed \'e4\'f1\'e9\'e5\'ed \'f0\'eb\'ec\'ec \'e1\'ee\'ec\'e5\'e0\'e5 \'f2\'e3 \'e7\'f6\'e5\'fa \'e4\'e9\'ec\'e4 (\'e4\'e9\'e5\'ed \'e4\'f2\'e5\'f7\'e1), \'ee\'e1\'ec\'e9 \'ec\'f4\'f1\'f4\'f1 \'e1\'f7\'f9\'e5\'fa \'f9\'f0\'e5\'f6\'f8\'e5 \'e1\'e3\'f7\'e5\'fa \'e4\'e0\'e7\'f8\'e5\'f0\'e5\'fa \'f9\'ec \'e4\'e9\'e5\'ed.\par
-\par
-3.. \'e1\'e3\'e9\'f7\'e5\'fa \'f2\'e9\'ee\'e5\'e3 \'e5\'ee\'e9\'e5\'ef (\f1\ltrch\lang1033 Paging & Sorting\f0\rtlch\lang1037 )\par
-\f1\ltrch\lang1033 Paging_ReturnsRequestedPage_AndTotalCountOfAllMatches\f0\rtlch\lang1037 - \'ee\'e4 \'e4\'e9\'e0 \'e1\'e5\'e3\'f7\'fa: \'f9\'e4\'f2\'ee\'e5\'e3 \'e4\'f0\'eb\'e5\'ef \'f0\'f9\'ec\'f3 (\'ec\'ee\'f9\'ec \'f2\'ee\'e5\'e3 \f1\ltrch\lang1033 3\f0\rtlch\lang1037  \'ee\'fa\'e5\'ea \'f1\'ea \'e4\'eb\'ec), \'e5\'f9\'f9\'e3\'e4 \'e4-\f1\ltrch\lang1033 TotalCount\f0\rtlch\lang1037  \'f9\'e5\'ee\'f8 \'f2\'ec \'e4\'ee\'f1\'f4\'f8 \'e4\'eb\'e5\'ec\'ec \'f9\'ec \'eb\'ec \'e4\'f8\'f9\'e5\'ee\'e5\'fa \'f9\'f2\'e5\'f0\'e5\'fa \'f2\'ec \'e4\'e7\'e9\'f4\'e5\'f9 (\'e5\'ec\'e0 \'f8\'f7 \'eb\'ee\'e4 \'f9\'e7\'e6\'f8\'e5 \'e1\'f2\'ee\'e5\'e3 \'e4\'f0\'e5\'eb\'e7\'e9).\par
-\f1\ltrch\lang1033 Sorting_WithEqualValues_IsStableAcrossPages\f0\rtlch\lang1037 - \'ee\'e4 \'e4\'e9\'e0 \'e1\'e5\'e3\'f7\'fa: \'e0\'fa \'e4\'ee\'e9\'e5\'ef \'e4\'e9\'f6\'e9\'e1 (\f1\ltrch\lang1033 Stable Sort\f0\rtlch\lang1037 ). \'e4\'e9\'e0 \'ee\'e5\'e5\'e3\'e0\'fa \'f9\'eb\'e0\'f9\'f8 \'ee\'ee\'e9\'e9\'f0\'e9\'ed \'ec\'f4\'e9 \'f9\'e3\'e4 \'f9\'e1\'e5 \'ec\'f2\'f8\'eb\'e9\'ed \'f8\'e1\'e9\'ed \'e9\'f9 \'f2\'f8\'ea \'e6\'e4\'e4 (\'eb\'ee\'e5 \'f1\'e8\'e8\'e5\'f1 "\'e7\'e3\'f9"), \'e4\'e5\'f1\'f4\'fa \'ee\'e9\'e5\'ef \'ee\'f9\'f0\'e9 \'ec\'f4\'e9 \f1\ltrch\lang1033 Id\f0\rtlch\lang1037  \'ee\'e5\'f0\'f2\'fa "\'f7\'f4\'e9\'f6\'e5\'fa" \'e0\'e5 \'eb\'f4\'e9\'ec\'e5\'e9\'e5\'fa \'f9\'ec \'f8\'f9\'e5\'ee\'e5\'fa \'e1\'ee\'f2\'e1\'f8 \'e1\'e9\'ef \'f2\'ee\'e5\'e3\'e9\'ed.\par
-\f1\ltrch\lang1033 Sorting_ByRequestNumberAscending_OrdersResults\f0\rtlch\lang1037 - \'ee\'e4 \'e4\'e9\'e0 \'e1\'e5\'e3\'f7\'fa: \'f9\'e4\'ee\'e9\'e5\'ef \'e4\'e1\'f1\'e9\'f1\'e9 (\'ec\'ee\'f9\'ec \'ec\'f4\'e9 \'ee\'f1\'f4\'f8 \'e1\'f7\'f9\'e4 \'e1\'f1\'e3\'f8 \'f2\'e5\'ec\'e4) \'e0\'eb\'ef \'ee\'f1\'e3\'f8 \'e0\'fa \'e4\'fa\'e5\'f6\'e0\'e5\'fa \'ee\'e4\'f7\'e8\'ef \'e0\'ec \'e4\'e2\'e3\'e5\'ec (\f1\ltrch\lang1033 REQ-100, REQ-200, REQ-300\f0\rtlch\lang1037 ).\par
-\'e5\'f2\'e5\'e3...\f1\ltrch\lang1033\par
-\par
-}
- 
+1. כיצד להריץ את המערכת
+Backend 
+יש להיכנס  לתיקיית צד השרת בנתיב הזה :
+  /candidate-test/src/Requests.Api  
+
+ ולהריץ את הפקודה:
+
+dotnet run --urls "http://localhost:60701"
+
+
+Frontend: 
+יש להיכנס לתיקיית הלקוח (client/) ולהריץ:
+npm start
+
+2. הרצת בדיקות (Tests)
+הבדיקות נמצאות בתיקייה tests/Requests.Tests. כדי להריץ אותן יש להקליד:
+dotnet test
+
+3. טכנולוגיות שנבחרו ומדוע?.
+.NET 8 (C#): נשארתי על הקוד  Repository  הקיים ­­­­­­
+xUnit & Fake Repositories: שימשו לכתיבת בדיקות מבודדות ונקיות ברמת הלוגיקה, המאפשרות לבדוק את ה-Service בלי תלות במסד נתונים אמיתי.
+Angular / Modern Frontend: נבחר לבניית ממשק משתמש מהיר, דינמי ומתקדם המבוסס על רכיבים (Components).
+
+4. הנחות עבודה והחלטות טכניות
+הנחה המשתמשים המבצעים פעולות במערכת עוברים תהליך אימות (Authentication), והנתונים עליהם (כמו זיהוי משתמש והאם הוא מנהל) מועברים בצורה מאובטחת מקונטקסט השרת.
+החלטה טכנית (פעולה אסינכרונית מול סינכרונית): הפרדנו פעולות רקע כבדות (כמו שליחת התראות) מהזרימה המרכזית של יצירת הבקשה.
+חלופה שנשקלה: ביצוע קריאת HTTP ישירה לשירות ההתראות בזמן אמת.
+למה בחרנו אחרת: אם שירות ההתראות נופל זמנית, קריאה ישירה הייתה גורמת לכך שהמשתמש לא יכול היה ליצור בקשה חדשה. שימוש בתור הודעות (Message Broker) מונע תלות כזו ומבטיח שהמערכת תישאר יציבה ועמידה בפני תקלות.
+5. מה לא הספקתי ואיך הייתי ממשיכה
+מה חסר: חיבור מלא מקצה לקצה (End-to-End) של כל המיקרו-שירותים בפועל והצגת התראות בזמן אמת (WebSockets) בממשק המשתמש.
+איך להמשיך: להטמיע בפועל Message Broker כמו RabbitMQ לתקשורת מבוססת-אירועים, ולהוסיף בדיקות אוטומטיות מקיפות גם בצד הלקוח.
+
+ חלק ב' - ארכיטקטורת Microservices ותקשורת אמינה
+כשהמערכת גדלה ועוברת ל-Microservices, החלוקה והפתרונות הנבחרים הם:
+א. חלוקה אפשרית לשירותים:
+Requests Service: אחראי על ניהול הבקשות, הלוגיקה העסקית והחיפושים.
+Users / Identity Service: אחראי על ניהול המשתמשים, האימות וההרשאות.
+Notifications Service: אחראי אך ורק על שליחת התראות (כגון אימייל או SMS) למשתמשים.
+התועלות: מאפשר סקלביליות (הגדלת רק את השירות שסובל מעומס) ובידוד תקלות (נפילה בשירות ההתראות לא משביתה את יצירת הבקשות).
+ב. תקשורת אמינה בתרחיש של נפילת שירות ההתראות:
+כאשר בקשה נוצרת או משנה סטטוס, שירות הבקשות אינו פונה ישירות לשירות ההתראות.
+במקום זאת, הוא מפרסם אירוע (Event) לתוך תור הודעות (Message Broker כמו RabbitMQ).
+תור ההודעות שומר את ההודעות באופן מאובטח. שירות ההתראות צורך את ההודעות בקצב שלו מרגע שהוא חוזר לפעילות (At-least-once delivery), ובכך נמנע אובדן מידע והמערכת ממשיכה לתפקד רגיל גם בזמן תקלות.
+
+
+
+מה הפרויקט מכיל מפורט יותר
+client
+ קומפוננטה request-list. שמציגה את פרמטרי החיפוש ואפשרות לטעון מחדש את התוכן מהשרת וטבלת תוצאות יפה. 
+models- כל האוביקטים שמשתמשים בהם בפרויקט. 
+Services-זהו ה-Service של הבקשות בצד הלקוח.דאגתי להעביר דרכו את ה-Headers של זיהוי המשתמש וההרשאות כפי שהשרת דורש, ובניתי את ה-Query Parameters בצורה דינמית כך שכל פילטר שהמשתמש בוחר נשלח בצורה מדויקת לשרת.
+קובץ Routes שמגדיר לי את הקומפננטה שלי שתוצג ראשונה בעליית האתר.
+ועוד...
+server
+CONTROLER -
+1. עבור כל הבקשות 
+2. עבור הסטטוסים- מכיוון שזה רשימה שמגיעה מהשרת 
+3. עבור סוגי הבקשות -מכיוון שזה רשימה שמגיעה מהשרת 
+SERVICE- כולל interface מתאים.
+1. עבור כל הבקשות - בניתי פונקציה חדשה שתעבוד עם פרמטרי החיפוש והסינון.-SearchAsync
+2. עבור הסטטוסים-GetStatusesAsync
+3. עבור סוגי הבקשות -GetTypesAsync
+4. Validate- בדיקת הולידציות
+REPOSITORY - כולל interface מתאים.
+עבור כל הבקשות - SearchAsync  – שאילתת EF Core מתקדמת הכוללת AsNoTracking, חיתוך לעמודים (Skip/Take), ספירת כולל (CountAsync), ומיפוי ישיר ל-DTO (Projection).
+ApplyPermissions – פונקציית עזר פרטית לאכיפת הרשעות ברמת מסד הנתונים.
+ApplyFilters – פונקציית עזר דינמית לבניית תנאי WHERE לפי בחירת המשתמש (כולל טווחי תאריכים מדויקים ב-UTC).
+ApplySorting – פונקציית עזר למיון יציב הכוללת מיון משני לפי Id למניעת קפיצות רשומות בין עמודים.
+
+tests
+-SERVICE
+REPOSITORY -
+1. בדיקות הרשאות (Permissions)
+* RegularUser_SeesOnlyOwnedOrAssignedRequests- מה היא בודקת: שמשתמש רגיל (לא מנהל) רואה אך ורק את הבקשות ששייכות לו
+Administrator_SeesAllRequests*- מה היא בודקת: שמנהל מערכת (admin: true) עוקף את מגבלת ההרשאות ורואה את כל הבקשות במערכת.
+Filters_AreCombinedWithPermissions_NotBypassingThem*-מה היא בודקת: שאם משתמש רגיל מפעיל פילטר (למשל: "הצג בקשות שהושלמו"), הפילטר לא עוקף את חוקי האבטחה. הוא יראה רק את הבקשות שהושלמו ששייכות לו בלבד, ולא של משתמשים אחרים. 
+2. בדיקות פילטרים (Filters)
+*StatusFilter_WithMultipleValues_ReturnsAnyOfThem-  מה היא בודקת: שכאשר בוחרים מספר סטטוסים בו-זמנית (למשל: גם "חדש" וגם "הושלם"), המערכת מחזירה את כל הבקשות שתואמות לאחד מהסטטוסים הללו (כמו פקודת IN ב-SQL).
+*RequestNumber_ContainsString_MatchesEvenInTheMiddle - מה היא בודקת: שהחיפוש לפי מספר בקשה מתבצע בתבנית "מכיל" (Contains) ולא רק "מתחיל ב-". היא מוודאת שחיפוש של מחרוזת שנמצאת באמצע המספר (כמו "00" בתוך REQ-100 ו-REQ-200) אכן מצליח למצוא את כל הרשומות הרלוונטיות.
+DateRange_EndIsExclusive_SoWholeLastDayIsIncluded
+מה היא בודקת: שחיפוש לפי טווח תאריכים עובד נכון עם גבול עליון בלעדי, כך שיום הסיום נכלל במלואו עד חצות הילה (היום העוקב), מבלי לפספס בקשות שנוצרו בדקות האחרונות של היום.
+
+3.. בדיקות עימוד ומיון (Paging & Sorting)
+Paging_ReturnsRequestedPage_AndTotalCountOfAllMatches- מה היא בודקת: שהעמוד הנכון נשלף (למשל עמוד 3 מתוך סך הכל), וששדה ה-TotalCount שומר על המספר הכולל של כל הרשומות שעונות על החיפוש (ולא רק כמה שחזרו בעמוד הנוכחי).
+Sorting_WithEqualValues_IsStableAcrossPages- מה היא בודקת: את המיון היציב (Stable Sort). היא מוודאת שכאשר ממיינים לפי שדה שבו לערכים רבים יש ערך זהה (כמו סטטוס "חדש"), הוספת מיון משני לפי Id מונעת "קפיצות" או כפילויות של רשומות במעבר בין עמודים.
+Sorting_ByRequestNumberAscending_OrdersResults- מה היא בודקת: שהמיון הבסיסי (למשל לפי מספר בקשה בסדר עולה) אכן מסדר את התוצאות מהקטן אל הגדול (REQ-100, REQ-200, REQ-300).
+ועוד...
